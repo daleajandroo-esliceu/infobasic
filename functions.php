@@ -2,6 +2,10 @@
 
 function infobasic_config(){
    
+register_nav_menus(
+     array(
+        'infobasic_main_menu' => 'Info Basic Menu Principal',     )
+);
 }
 add_action( 'after_setup_theme', 'infobasic_config' );
 
