@@ -11,7 +11,13 @@
 
 <div class="cabecer">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -20,6 +26,7 @@
           'theme_location' => 'infobasic_main_menu',
           'depth'          => 3, 
           'container'      => false,
+          'container_id'     => 'navbarNav',
           'menu_class'     => 'navbar-nav ml-auto',
           'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
           'walker'         => new WP_Bootstrap_Navwalker(),
