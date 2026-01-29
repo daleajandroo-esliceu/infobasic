@@ -18,6 +18,25 @@ Version: 1.0
     --text-light-color: rgb(247, 161, 82);
 }
 
-body{
-    background-color: var(--background-body);
+body {
+    background: var(--background-body);
 }
+
+.navbar {
+    background-color: var(--main-color);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-color);
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show {
+    color: var(--text-color-active);
+}
+
+.dropdown-menu {
+    background-color: var(--main-color);
+}
+
